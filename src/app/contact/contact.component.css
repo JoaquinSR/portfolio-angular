@@ -1,0 +1,6 @@
+.sent-message {
+    display: flex !important;
+}
+.not-message {
+    display: none !important;
+}
