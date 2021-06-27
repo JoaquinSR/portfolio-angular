@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,14 @@ const routes: Routes = [
       title: 'Portfolio Homepage',
       description: 'Joaquin portfolio home page',
       ogTitle: 'Joaquin portfolio home page',
+    }
+  },
+  {
+    path: 'news', component: NewsComponent,
+    data: {
+      title: 'Portfolio ApiNews',
+      description: 'Joaquin portfolio news page',
+      ogTitle: 'Joaquin portfolio news page',
     }
   },
   {

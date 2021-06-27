@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, Meta } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { HeroComponent } from './hero/hero.component';
+import { NewsComponent } from './news/news.component';
 
 
 @NgModule({
@@ -26,12 +28,14 @@ import { HeroComponent } from './hero/hero.component';
     HeaderComponent,
     FooterComponent,
     SkillsComponent,
-    HeroComponent
+    HeroComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [Meta],
   bootstrap: [AppComponent]
